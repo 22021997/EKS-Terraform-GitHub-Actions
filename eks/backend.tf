@@ -7,8 +7,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "my-ews-baket1-krana"
-    region         = "us-east-1"
+    bucket         = "my-ews-bucket1-krana"
+    region         = "ap-south-1"
     key            = "eks/terraform.tfstate"
     dynamodb_table = "Lock-Files"
     encrypt        = true
